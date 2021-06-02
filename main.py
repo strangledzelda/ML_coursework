@@ -20,7 +20,8 @@ from tpot import TPOTClassifier
 # загрузка датасета
 @st.cache
 def load_data():
-    data = pd.read_csv('C:\\Users\\Дасупс\\Downloads\\Data_Cortex_Nuclear.csv')
+    url = 'https://raw.githubusercontent.com/strangledzelda/ML_coursework/main/Data_Cortex_Nuclear.csv'
+    data = pd.read_csv(url)
     return data
 
 
